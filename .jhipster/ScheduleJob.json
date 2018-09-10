@@ -1,0 +1,51 @@
+{
+    "name": "ScheduleJob",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beanName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "methodName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "params",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cronExpression",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "remark",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createTime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180805011457",
+    "entityTableName": "schedule_job",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

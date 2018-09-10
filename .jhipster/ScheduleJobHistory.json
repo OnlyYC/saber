@@ -1,0 +1,66 @@
+{
+    "name": "ScheduleJobHistory",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "beanName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "methodName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "params",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cronExpression",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "error",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "elapsedTime",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "createTime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endTime",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "scheduleJob",
+            "otherEntityName": "scheduleJob",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180805011458",
+    "entityTableName": "schedule_job_history",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

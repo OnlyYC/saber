@@ -2,7 +2,8 @@ package com.liaoyb.saber.service;
 import com.liaoyb.saber.config.Constants;
 
 import com.liaoyb.saber.SaberApp;
-import com.liaoyb.saber.domain.User;
+import com.liaoyb.saber.modules.sys.domain.User;
+import com.liaoyb.saber.modules.sys.service.MailService;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.Before;
 import org.junit.Test;

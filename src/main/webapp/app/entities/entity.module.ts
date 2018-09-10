@@ -1,10 +1,14 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { SaberScheduleJobModule } from './schedule-job/schedule-job.module';
+import { SaberScheduleJobHistoryModule } from './schedule-job-history/schedule-job-history.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
     // prettier-ignore
     imports: [
+        SaberScheduleJobModule,
+        SaberScheduleJobHistoryModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

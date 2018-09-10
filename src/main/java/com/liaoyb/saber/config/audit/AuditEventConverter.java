@@ -1,6 +1,6 @@
 package com.liaoyb.saber.config.audit;
 
-import com.liaoyb.saber.domain.PersistentAuditEvent;
+import com.liaoyb.saber.modules.sys.domain.PersistentAuditEvent;
 
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;

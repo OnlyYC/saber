@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="scheduleJob">
+            <h2><span jhiTranslate="saberApp.scheduleJob.detail.title">Schedule Job</span> {{scheduleJob.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="saberApp.scheduleJob.title">Title</span></dt>
+                <dd>
+                    <span>{{scheduleJob.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.description">Description</span></dt>
+                <dd>
+                    <span>{{scheduleJob.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.beanName">Bean Name</span></dt>
+                <dd>
+                    <span>{{scheduleJob.beanName}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.methodName">Method Name</span></dt>
+                <dd>
+                    <span>{{scheduleJob.methodName}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.params">Params</span></dt>
+                <dd>
+                    <span>{{scheduleJob.params}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.cronExpression">Cron Expression</span></dt>
+                <dd>
+                    <span>{{scheduleJob.cronExpression}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.status">Status</span></dt>
+                <dd>
+                    <span>{{scheduleJob.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.remark">Remark</span></dt>
+                <dd>
+                    <span>{{scheduleJob.remark}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJob.createTime">Create Time</span></dt>
+                <dd>
+                    <span>{{scheduleJob.createTime}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/schedule-job', scheduleJob.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -111,6 +111,10 @@
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+        </dependency>
+        <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
         </dependency>
@@ -712,11 +716,11 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-starter-undertow</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-devtools</artifactId>
-                    <optional>true</optional>
-                </dependency>
+                <!--<dependency>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-devtools</artifactId>-->
+                    <!--<optional>true</optional>-->
+                <!--</dependency>-->
             </dependencies>
             <build>
                 <plugins>

@@ -1,0 +1,73 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="scheduleJobHistory">
+            <h2><span jhiTranslate="saberApp.scheduleJobHistory.detail.title">Schedule Job History</span> {{scheduleJobHistory.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.title">Title</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.description">Description</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.description}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.beanName">Bean Name</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.beanName}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.methodName">Method Name</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.methodName}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.params">Params</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.params}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.cronExpression">Cron Expression</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.cronExpression}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.status">Status</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.status}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.error">Error</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.error}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.elapsedTime">Elapsed Time</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.elapsedTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.createTime">Create Time</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.createTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.endTime">End Time</span></dt>
+                <dd>
+                    <span>{{scheduleJobHistory.endTime}}</span>
+                </dd>
+                <dt><span jhiTranslate="saberApp.scheduleJobHistory.scheduleJob">Schedule Job</span></dt>
+                <dd>
+                    <div *ngIf="scheduleJobHistory.scheduleJobId">
+                        <a [routerLink]="['/schedule-job', scheduleJobHistory.scheduleJobId, 'view']">{{scheduleJobHistory.scheduleJobId}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/schedule-job-history', scheduleJobHistory.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 package com.liaoyb.saber.security;
 
-import com.liaoyb.saber.domain.User;
-import com.liaoyb.saber.repository.UserRepository;
+import com.liaoyb.saber.modules.sys.domain.User;
+import com.liaoyb.saber.modules.sys.repository.UserRepository;
 import org.hibernate.validator.internal.constraintvalidators.hv.EmailValidator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

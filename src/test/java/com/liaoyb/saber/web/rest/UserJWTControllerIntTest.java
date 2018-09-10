@@ -1,11 +1,12 @@
 package com.liaoyb.saber.web.rest;
 
 import com.liaoyb.saber.SaberApp;
-import com.liaoyb.saber.domain.User;
-import com.liaoyb.saber.repository.UserRepository;
+import com.liaoyb.saber.modules.sys.domain.User;
+import com.liaoyb.saber.modules.sys.web.UserJWTController;
+import com.liaoyb.saber.modules.sys.repository.UserRepository;
 import com.liaoyb.saber.security.jwt.TokenProvider;
-import com.liaoyb.saber.web.rest.vm.LoginVM;
-import com.liaoyb.saber.web.rest.errors.ExceptionTranslator;
+import com.liaoyb.saber.modules.sys.vm.LoginVM;
+import com.liaoyb.saber.web.errors.ExceptionTranslator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

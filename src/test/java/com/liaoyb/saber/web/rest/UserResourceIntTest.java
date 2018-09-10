@@ -1,16 +1,17 @@
 package com.liaoyb.saber.web.rest;
 
 import com.liaoyb.saber.SaberApp;
-import com.liaoyb.saber.domain.Authority;
-import com.liaoyb.saber.domain.User;
-import com.liaoyb.saber.repository.UserRepository;
+import com.liaoyb.saber.modules.sys.domain.Authority;
+import com.liaoyb.saber.modules.sys.domain.User;
+import com.liaoyb.saber.modules.sys.web.UserResource;
+import com.liaoyb.saber.modules.sys.repository.UserRepository;
 import com.liaoyb.saber.security.AuthoritiesConstants;
-import com.liaoyb.saber.service.MailService;
-import com.liaoyb.saber.service.UserService;
-import com.liaoyb.saber.service.dto.UserDTO;
-import com.liaoyb.saber.service.mapper.UserMapper;
-import com.liaoyb.saber.web.rest.errors.ExceptionTranslator;
-import com.liaoyb.saber.web.rest.vm.ManagedUserVM;
+import com.liaoyb.saber.modules.sys.service.MailService;
+import com.liaoyb.saber.modules.sys.service.UserService;
+import com.liaoyb.saber.modules.sys.dto.UserDTO;
+import com.liaoyb.saber.modules.sys.mapper.UserMapper;
+import com.liaoyb.saber.web.errors.ExceptionTranslator;
+import com.liaoyb.saber.modules.sys.vm.ManagedUserVM;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.junit.Test;

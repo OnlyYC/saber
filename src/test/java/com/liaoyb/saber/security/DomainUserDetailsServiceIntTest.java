@@ -1,8 +1,8 @@
 package com.liaoyb.saber.security;
 
 import com.liaoyb.saber.SaberApp;
-import com.liaoyb.saber.domain.User;
-import com.liaoyb.saber.repository.UserRepository;
+import com.liaoyb.saber.modules.sys.domain.User;
+import com.liaoyb.saber.modules.sys.repository.UserRepository;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;

@@ -2,9 +2,10 @@ package com.liaoyb.saber.web.rest;
 
 import com.liaoyb.saber.SaberApp;
 import com.liaoyb.saber.config.audit.AuditEventConverter;
-import com.liaoyb.saber.domain.PersistentAuditEvent;
-import com.liaoyb.saber.repository.PersistenceAuditEventRepository;
-import com.liaoyb.saber.service.AuditEventService;
+import com.liaoyb.saber.modules.sys.domain.PersistentAuditEvent;
+import com.liaoyb.saber.modules.sys.web.AuditResource;
+import com.liaoyb.saber.modules.sys.repository.PersistenceAuditEventRepository;
+import com.liaoyb.saber.modules.sys.service.AuditEventService;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

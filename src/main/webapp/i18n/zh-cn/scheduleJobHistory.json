@@ -1,0 +1,33 @@
+
+{
+    "saberApp": {
+        "scheduleJobHistory" : {
+            "home": {
+                "title": "Schedule Job Histories",
+                "createLabel": "创建新 Schedule Job History",
+                "createOrEditLabel": "创建或编辑 Schedule Job History"
+            },
+            "created": "Schedule Job History {{ param }} 创建成功",
+            "updated": "Schedule Job History {{ param }} 更新成功",
+            "deleted": "Schedule Job History {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Schedule Job History {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Schedule Job History"
+            },
+            "title": "Title",
+            "description": "Description",
+            "beanName": "Bean Name",
+            "methodName": "Method Name",
+            "params": "Params",
+            "cronExpression": "Cron Expression",
+            "status": "Status",
+            "error": "Error",
+            "elapsedTime": "Elapsed Time",
+            "createTime": "Create Time",
+            "endTime": "End Time",
+            "scheduleJob": "Schedule Job"
+        }
+    }
+}

@@ -1,0 +1,88 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="saberApp.scheduleJobHistory.home.title">Schedule Job Histories</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-schedule-job-history" [routerLink]="['/schedule-job-history/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="saberApp.scheduleJobHistory.home.createLabel">
+            Create new Schedule Job History
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="scheduleJobHistories">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="title"><span jhiTranslate="saberApp.scheduleJobHistory.title">Title</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="description"><span jhiTranslate="saberApp.scheduleJobHistory.description">Description</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="beanName"><span jhiTranslate="saberApp.scheduleJobHistory.beanName">Bean Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="methodName"><span jhiTranslate="saberApp.scheduleJobHistory.methodName">Method Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="params"><span jhiTranslate="saberApp.scheduleJobHistory.params">Params</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="cronExpression"><span jhiTranslate="saberApp.scheduleJobHistory.cronExpression">Cron Expression</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="status"><span jhiTranslate="saberApp.scheduleJobHistory.status">Status</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="error"><span jhiTranslate="saberApp.scheduleJobHistory.error">Error</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="elapsedTime"><span jhiTranslate="saberApp.scheduleJobHistory.elapsedTime">Elapsed Time</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="createTime"><span jhiTranslate="saberApp.scheduleJobHistory.createTime">Create Time</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="endTime"><span jhiTranslate="saberApp.scheduleJobHistory.endTime">End Time</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="scheduleJobId"><span jhiTranslate="saberApp.scheduleJobHistory.scheduleJob">Schedule Job</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let scheduleJobHistory of scheduleJobHistories ;trackBy: trackId">
+                <td><a [routerLink]="['/schedule-job-history', scheduleJobHistory.id, 'view' ]">{{scheduleJobHistory.id}}</a></td>
+                <td>{{scheduleJobHistory.title}}</td>
+                <td>{{scheduleJobHistory.description}}</td>
+                <td>{{scheduleJobHistory.beanName}}</td>
+                <td>{{scheduleJobHistory.methodName}}</td>
+                <td>{{scheduleJobHistory.params}}</td>
+                <td>{{scheduleJobHistory.cronExpression}}</td>
+                <td>{{scheduleJobHistory.status}}</td>
+                <td>{{scheduleJobHistory.error}}</td>
+                <td>{{scheduleJobHistory.elapsedTime}}</td>
+                <td>{{scheduleJobHistory.createTime | date:'medium'}}</td>
+                <td>{{scheduleJobHistory.endTime | date:'medium'}}</td>
+                <td>
+                    <div *ngIf="scheduleJobHistory.scheduleJobId">
+                        <a [routerLink]="['../schedule-job', scheduleJobHistory.scheduleJobId , 'view' ]" >{{scheduleJobHistory.scheduleJobId}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/schedule-job-history', scheduleJobHistory.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/schedule-job-history', scheduleJobHistory.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'schedule-job-history/'+ scheduleJobHistory.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="scheduleJobHistories && scheduleJobHistories.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="queryCount" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

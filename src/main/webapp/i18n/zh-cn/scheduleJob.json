@@ -1,0 +1,38 @@
+
+{
+    "saberApp": {
+        "scheduleJob" : {
+            "home": {
+                "title": "Schedule Jobs",
+                "createLabel": "创建新 Schedule Job",
+                "createOrEditLabel": "创建或编辑 Schedule Job"
+            },
+            "created": "Schedule Job {{ param }} 创建成功",
+            "updated": "Schedule Job {{ param }} 更新成功",
+            "deleted": "Schedule Job {{ param }} 删除成功",
+            "run": "Schedule Job {{ param }} 执行成功",
+            "pause": "Schedule Job {{ param }} 暂停成功",
+            "resume": "Schedule Job {{ param }} 恢复成功",
+            "delete": {
+                "question": "你确定要删除 Schedule Job {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Schedule Job"
+            },
+            "title": "Title",
+            "description": "Description",
+            "beanName": "Bean Name",
+            "methodName": "Method Name",
+            "params": "Params",
+            "cronExpression": "Cron Expression",
+            "status": "Status",
+            "remark": "Remark",
+            "createTime": "Create Time",
+            "action": {
+                "run": "启动",
+                "pause": "暂停",
+                "resume": "恢复"
+            }
+        }
+    }
+}
