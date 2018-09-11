@@ -12,13 +12,14 @@ saber
 
 
 2.前端应用
+
 安装
 > yarn install
 
 启动
 > yarn start
 
-详细[参考](doc/Install.md)
+[详细参考](doc/Install.md)
 
 TODO
 ---
