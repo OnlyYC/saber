@@ -11,6 +11,8 @@ import org.quartz.CronTrigger;
 import org.quartz.Scheduler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.DependsOn;
+import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -24,6 +26,7 @@ import java.util.Optional;
  * Service Implementation for managing ScheduleJob.
  */
 @Service
+@Order
 @Transactional
 public class ScheduleJobServiceImpl implements ScheduleJobService {
 
