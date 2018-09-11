@@ -1,4 +1,4 @@
-package com.liaoyb.saber.web.rest;
+package com.liaoyb.saber.modules.sys.web;
 
 import com.liaoyb.saber.config.Constants;
 import com.liaoyb.saber.SaberApp;

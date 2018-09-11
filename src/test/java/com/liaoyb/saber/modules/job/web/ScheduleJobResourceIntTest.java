@@ -1,4 +1,4 @@
-package com.liaoyb.saber.web.rest;
+package com.liaoyb.saber.modules.job.web;
 
 import com.liaoyb.saber.SaberApp;
 
@@ -8,6 +8,7 @@ import com.liaoyb.saber.modules.job.repository.ScheduleJobRepository;
 import com.liaoyb.saber.modules.job.service.ScheduleJobService;
 import com.liaoyb.saber.modules.job.dto.ScheduleJobDTO;
 import com.liaoyb.saber.modules.job.mapper.ScheduleJobMapper;
+import com.liaoyb.saber.modules.sys.web.TestUtil;
 import com.liaoyb.saber.web.errors.ExceptionTranslator;
 
 import org.junit.Before;
@@ -30,7 +31,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 
-import static com.liaoyb.saber.web.rest.TestUtil.createFormattingConversionService;
+import static com.liaoyb.saber.modules.sys.web.TestUtil.createFormattingConversionService;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -78,7 +79,7 @@ public class ScheduleJobResourceIntTest {
 
     @Autowired
     private ScheduleJobMapper scheduleJobMapper;
-    
+
 
     @Autowired
     private ScheduleJobService scheduleJobService;
@@ -203,7 +204,7 @@ public class ScheduleJobResourceIntTest {
             .andExpect(jsonPath("$.[*].remark").value(hasItem(DEFAULT_REMARK.toString())))
             .andExpect(jsonPath("$.[*].createTime").value(hasItem(DEFAULT_CREATE_TIME.toString())));
     }
-    
+
 
     @Test
     @Transactional

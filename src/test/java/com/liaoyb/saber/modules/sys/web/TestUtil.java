@@ -1,4 +1,4 @@
-package com.liaoyb.saber.web.rest;
+package com.liaoyb.saber.modules.sys.web;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

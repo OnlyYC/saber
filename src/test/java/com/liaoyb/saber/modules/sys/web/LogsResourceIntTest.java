@@ -1,10 +1,9 @@
-package com.liaoyb.saber.web.rest;
+package com.liaoyb.saber.modules.sys.web;
 
 import com.liaoyb.saber.SaberApp;
 import com.liaoyb.saber.modules.sys.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
-import com.liaoyb.saber.modules.sys.web.LogsResource;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,9 +1,8 @@
-package com.liaoyb.saber.web.rest;
+package com.liaoyb.saber.modules.sys.web;
 
 import com.liaoyb.saber.SaberApp;
 import com.liaoyb.saber.modules.sys.domain.Authority;
 import com.liaoyb.saber.modules.sys.domain.User;
-import com.liaoyb.saber.modules.sys.web.UserResource;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
 import com.liaoyb.saber.common.security.AuthoritiesConstants;
 import com.liaoyb.saber.modules.sys.service.MailService;

@@ -1,8 +1,7 @@
-package com.liaoyb.saber.service;
+package com.liaoyb.saber.modules.sys.service;
 
 import com.liaoyb.saber.SaberApp;
 import com.liaoyb.saber.config.Constants;
-import com.liaoyb.saber.modules.sys.service.UserService;
 import com.liaoyb.saber.modules.sys.domain.User;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
 import com.liaoyb.saber.modules.sys.dto.UserDTO;
