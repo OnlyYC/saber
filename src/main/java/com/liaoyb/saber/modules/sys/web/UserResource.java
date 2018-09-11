@@ -4,7 +4,7 @@ import com.liaoyb.saber.config.Constants;
 import com.codahale.metrics.annotation.Timed;
 import com.liaoyb.saber.modules.sys.domain.User;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
-import com.liaoyb.saber.security.AuthoritiesConstants;
+import com.liaoyb.saber.common.security.AuthoritiesConstants;
 import com.liaoyb.saber.modules.sys.service.MailService;
 import com.liaoyb.saber.modules.sys.service.UserService;
 import com.liaoyb.saber.modules.sys.dto.UserDTO;

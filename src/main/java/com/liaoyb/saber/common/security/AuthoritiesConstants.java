@@ -1,4 +1,4 @@
-package com.liaoyb.saber.security;
+package com.liaoyb.saber.common.security;
 
 /**
  * Constants for Spring Security authorities.

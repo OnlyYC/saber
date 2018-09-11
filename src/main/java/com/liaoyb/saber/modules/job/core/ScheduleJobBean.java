@@ -19,7 +19,7 @@ package com.liaoyb.saber.modules.job.core;
 import com.liaoyb.saber.common.utils.DateUtils;
 import com.liaoyb.saber.common.utils.SpringContextUtils;
 import com.liaoyb.saber.common.utils.StringUtils;
-import com.liaoyb.saber.constants.Constants;
+import com.liaoyb.saber.common.constants.Constants;
 import com.liaoyb.saber.modules.job.domain.ScheduleJob;
 import com.liaoyb.saber.modules.job.service.ScheduleJobHistoryService;
 import com.liaoyb.saber.modules.job.dto.ScheduleJobHistoryDTO;

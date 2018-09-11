@@ -4,7 +4,7 @@ import com.codahale.metrics.annotation.Timed;
 
 import com.liaoyb.saber.modules.sys.domain.User;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
-import com.liaoyb.saber.security.SecurityUtils;
+import com.liaoyb.saber.common.security.SecurityUtils;
 import com.liaoyb.saber.modules.sys.dto.UserDTO;
 import com.liaoyb.saber.web.errors.*;
 import com.liaoyb.saber.modules.sys.vm.KeyAndPasswordVM;

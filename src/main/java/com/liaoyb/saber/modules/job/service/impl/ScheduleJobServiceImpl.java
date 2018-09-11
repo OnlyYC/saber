@@ -1,7 +1,7 @@
 package com.liaoyb.saber.modules.job.service.impl;
 
 import com.liaoyb.saber.modules.job.domain.ScheduleJob;
-import com.liaoyb.saber.enums.ScheduleStatus;
+import com.liaoyb.saber.modules.job.enums.ScheduleStatus;
 import com.liaoyb.saber.modules.job.repository.ScheduleJobRepository;
 import com.liaoyb.saber.modules.job.service.ScheduleJobService;
 import com.liaoyb.saber.modules.job.dto.ScheduleJobDTO;
@@ -11,7 +11,6 @@ import org.quartz.CronTrigger;
 import org.quartz.Scheduler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.DependsOn;
 import org.springframework.core.annotation.Order;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

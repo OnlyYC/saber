@@ -1,7 +1,7 @@
 package com.liaoyb.saber.config;
 
-import com.liaoyb.saber.security.*;
-import com.liaoyb.saber.security.jwt.*;
+import com.liaoyb.saber.common.security.*;
+import com.liaoyb.saber.common.security.jwt.*;
 
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.context.annotation.Bean;

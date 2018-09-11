@@ -1,4 +1,4 @@
-package com.liaoyb.saber.constants;
+package com.liaoyb.saber.common.constants;
 
 /**
  * 常量

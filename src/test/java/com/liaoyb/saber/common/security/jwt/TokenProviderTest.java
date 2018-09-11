@@ -1,6 +1,6 @@
-package com.liaoyb.saber.security.jwt;
+package com.liaoyb.saber.common.security.jwt;
 
-import com.liaoyb.saber.security.AuthoritiesConstants;
+import com.liaoyb.saber.common.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

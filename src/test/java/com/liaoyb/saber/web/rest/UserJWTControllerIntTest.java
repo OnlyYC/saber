@@ -4,7 +4,7 @@ import com.liaoyb.saber.SaberApp;
 import com.liaoyb.saber.modules.sys.domain.User;
 import com.liaoyb.saber.modules.sys.web.UserJWTController;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
-import com.liaoyb.saber.security.jwt.TokenProvider;
+import com.liaoyb.saber.common.security.jwt.TokenProvider;
 import com.liaoyb.saber.modules.sys.vm.LoginVM;
 import com.liaoyb.saber.web.errors.ExceptionTranslator;
 import org.junit.Before;

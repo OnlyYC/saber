@@ -1,7 +1,7 @@
 package com.liaoyb.saber.modules.sys.web;
 
-import com.liaoyb.saber.security.jwt.JWTConfigurer;
-import com.liaoyb.saber.security.jwt.TokenProvider;
+import com.liaoyb.saber.common.security.jwt.JWTConfigurer;
+import com.liaoyb.saber.common.security.jwt.TokenProvider;
 import com.liaoyb.saber.modules.sys.vm.LoginVM;
 
 import com.codahale.metrics.annotation.Timed;

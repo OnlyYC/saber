@@ -1,4 +1,4 @@
-package com.liaoyb.saber.security;
+package com.liaoyb.saber.common.security;
 
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;

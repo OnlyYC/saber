@@ -1,4 +1,4 @@
-package com.liaoyb.saber.security;
+package com.liaoyb.saber.common.security;
 
 import org.junit.Test;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

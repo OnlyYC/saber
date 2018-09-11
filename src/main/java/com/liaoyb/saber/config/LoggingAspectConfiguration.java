@@ -1,6 +1,6 @@
 package com.liaoyb.saber.config;
 
-import com.liaoyb.saber.aop.logging.LoggingAspect;
+import com.liaoyb.saber.common.aop.logging.LoggingAspect;
 
 import io.github.jhipster.config.JHipsterConstants;
 

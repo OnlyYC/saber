@@ -1,4 +1,4 @@
-package com.liaoyb.saber.enums;
+package com.liaoyb.saber.modules.job.enums;
 
 /**
  * 定时任务状态

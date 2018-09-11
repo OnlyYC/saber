@@ -1,4 +1,4 @@
-package com.liaoyb.saber.aop.logging;
+package com.liaoyb.saber.common.aop.logging;
 
 import io.github.jhipster.config.JHipsterConstants;
 

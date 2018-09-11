@@ -5,8 +5,8 @@ import com.liaoyb.saber.modules.sys.domain.User;
 import com.liaoyb.saber.modules.sys.repository.AuthorityRepository;
 import com.liaoyb.saber.config.Constants;
 import com.liaoyb.saber.modules.sys.repository.UserRepository;
-import com.liaoyb.saber.security.AuthoritiesConstants;
-import com.liaoyb.saber.security.SecurityUtils;
+import com.liaoyb.saber.common.security.AuthoritiesConstants;
+import com.liaoyb.saber.common.security.SecurityUtils;
 import com.liaoyb.saber.modules.sys.util.RandomUtil;
 import com.liaoyb.saber.modules.sys.dto.UserDTO;
 

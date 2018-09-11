@@ -1,4 +1,4 @@
-package com.liaoyb.saber.security.jwt;
+package com.liaoyb.saber.common.security.jwt;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
